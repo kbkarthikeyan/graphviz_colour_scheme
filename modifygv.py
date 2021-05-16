@@ -15,7 +15,7 @@ def modi_sent(stri_name, node): # to modify the gv file and add colour map
     tmp = tmp.split(";")
     tmp[0] = S0
     tmp[1] = S1
-    for i in range(1, len(node)):
+    for i in range(3, len(node)):
         tmp[i] = "{} [{} = {}]".format(tmp[i],"color", int(node[i]/20))
     new_sent = ";".join(map(str,tmp))
     return new_sent
