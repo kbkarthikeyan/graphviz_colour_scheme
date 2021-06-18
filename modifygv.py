@@ -24,9 +24,9 @@ def save_file(file_name, stri_name): # to save the modified file to gv
     with open(file_name, "w") as out:
         out.write(stri_name)
         
-def view(stri_name):  #to view the file in neato in the png format      
-    stri_name.engine = "neato"
-    stri_name.format = "png"
+def view(stri_name, ngin = "neato", form = "png"):  #to view the file in neato in the png format      
+    stri_name.engine = ngin
+    stri_name.format = form
     stri_name.view()
     
     
